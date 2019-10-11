@@ -26,7 +26,7 @@ void test_sumVectors() {
 	TEST_ASSERT_EQUAL(6, sumVec->y);
 	destroyVector(&vec1);
 	destroyVector(&vec2);
-	destroyVector(&sumVec);
+	destroyVector(&sumVec); // NOTE: Comment this line to check that Valgrind captures memory errors
 }
 
 void test_cmp_vectors_equal() {

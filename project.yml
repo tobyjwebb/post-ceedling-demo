@@ -67,10 +67,16 @@
     :html_report_type: basic  # Options are 'basic' or 'detailed'.
     :xml_report: false # Enables the output of an XML report for utils:gcov
 
-#:tools:
-# Ceedling defaults to using gcc for compiling, linking, etc.
-# As [:tools] is blank, gcc will be used (so long as it's in your system path)
-# See documentation to configure a given toolchain for use
+:tools:
+  :pre_test_fixture_execute:
+    :executable: valgrind
+    :arguments:
+      - --track-origins=yes
+      - --leak-check=full
+      - --show-leak-kinds=all
+      - --errors-for-leak-kinds=all
+      - --error-exitcode=10
+      - ${1}
 
 # LIBRARIES
 # These libraries are automatically injected into the build process. Those specified as
@@ -92,4 +98,5 @@
   :enabled:
     - stdout_pretty_tests_report
     - module_generator
+    - command_hooks
 ...

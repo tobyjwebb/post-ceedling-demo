@@ -26,6 +26,8 @@
   :executable: .out
 
 :paths:
+  :include:
+    - reqs/include/**
   :test:
     - +:test/**
     - -:test/support
@@ -80,6 +82,7 @@
   :common: &common_libraries []
   :test:
     - *common_libraries
+    - reqs/lib/libmy_math.so
   :release:
     - *common_libraries
 

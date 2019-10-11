@@ -1,4 +1,4 @@
 /build
 *.so
 /urltest
-/reqs
+/.vscode

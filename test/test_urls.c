@@ -3,11 +3,6 @@
 #include "unity.h"
 
 #include "urltest.h"
-// These two includes are required, otherwise we will get an error at linking time:
-// ****************** //
-#include "urltestlib1.h"
-#include "urltestlib2.h"
-// ****************** //
 
 void setUp() {}
 void tearDown() {}

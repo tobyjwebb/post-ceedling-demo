@@ -3,7 +3,7 @@ FROM ubuntu:19.04
 ENV TZ UTC
 
 RUN apt-get update && \
-	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends build-essential git gem ruby make gcc valgrind && \
+	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends build-essential git gem ruby make gcc valgrind vim && \
 	apt-get clean && rm -rf /var/cache/apt/archives/* && \
     rm -rf /var/lib/apt/lists/* && \
 	cd /tmp/ && \

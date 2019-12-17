@@ -9,4 +9,4 @@ urltest: src/urltest.c src/urltest.h src/urltestlib1.c src/urltestlib1.h src/url
 
 .PHONY: dockerimage
 dockerimage: Dockerfile
-	docker build -t zaleos-ubuntu .
+	docker build --no-cache -t zaleos-ubuntu .

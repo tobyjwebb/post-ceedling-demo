@@ -64,9 +64,9 @@
     bool:     UINT8
 
 :gcov:
-    :html_report: true # Enables the output of an HTML report for utils:gcov
-    :html_report_type: basic  # Options are 'basic' or 'detailed'.
-    :xml_report: false # Enables the output of an XML report for utils:gcov
+  :html_report: true # Enables the output of an HTML report for utils:gcov
+  :html_report_type: basic  # Options are 'basic' or 'detailed'.
+  :xml_report: false # Enables the output of an XML report for utils:gcov
 
 :tools:
   :pre_test_fixture_execute:
@@ -100,4 +100,5 @@
     - stdout_pretty_tests_report
     - module_generator
     - command_hooks
+    - gcov
 ...

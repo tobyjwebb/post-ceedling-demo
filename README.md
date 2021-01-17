@@ -1,4 +1,4 @@
-# basic-ceedling-example
+# post-ceedling-demo
 
 This is a basic Ceedling example used to illustrate some of the work we have been doing @ Zaleos on the Ceedling framework.
 It is the example code from the following blog post:

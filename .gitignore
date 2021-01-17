@@ -1,2 +1,5 @@
 /build
 *.so
+/.vscode
+/urltest
+/reqs
